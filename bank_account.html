@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex flex-col justify-center content-center">
+    <header>
+        <h1 class="text-3xl md:text-5xl text-center text-violet-800 font-semibold mt-5 lg:mt-12"> Account's Details </h1>
+    </header>
+
+    <main>
+        <section class="w-3/4 mx-auto mt-8 md:mt-12 lg:mt-20">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-5 lg:gap-12">
+                <div class="bg-violet-400 rounded-lg p-5">
+                    <h1 class="text-center text-3xl lg:text-5xl pb-8 font-bold" >Balance</h1>
+                    <h3 class="text-center text-5xl lg:text-7xl pb-8 font-bold">$ <span id="balance">2575.00</span></h3>
+                </div>
+
+                <div class="bg-purple-400 rounded-lg p-5">
+                    <h1 class="text-center text-3xl lg:text-5xl pb-8 font-bold" >Deposit</h1>
+                    <h3 class="text-center text-5xl lg:text-7xl pb-8 font-bold">$ <span id="deposit">00.00</span></h3>
+                </div>
+                
+                <div class="bg-cyan-400 rounded-lg p-5">
+                    <h1 class="text-center text-3xl lg:text-5xl pb-8 font-bold" >Withdraw</h1>
+                    <h3 class="text-center text-5xl lg:text-7xl pb-8 font-bold">$ <span id="withdraw">00.00</span></h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-3/4 mx-auto mt-8 md:mt-20 lg:mt-24 mb-8">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-5 lg:gap-12">
+                <div class="bg-violet-200 rounded-lg p-5">
+                    <h3 class="text-xl md:text-3xl font-bold ml-5 md:ml-12 pt-5 lg:pt-12">Please Deposit</h3>
+
+                    <div>
+                        <input id="deposit-amount" class="block w-3/4 lg:w-1/2 ml-5 md:ml-12 mt-5 md:mt-10 p-3 font-bold" type="number" placeholder="$ Please enter the amount">
+                        <button id="deposit-btn" class="text-white hover:text-violet-700 bg-violet-700 hover:bg-white ml-5 md:ml-12 mt-8 md:mt-12 md:mb-8 mb-5 lg:mb-12  lg:font-xl lg:font-bold  rounded lg:rounded-md px-3 py-1 lg:px-8 lg:py-3">Deposit</button>
+                    </div>
+                </div>
+                
+                <div class="bg-violet-200 rounded-lg p-5">
+                    <h3 class="text-xl md:text-3xl font-bold ml-5 md:ml-12 pt-5 lg:pt-12">Please Withdraw</h3>
+
+                    <div>
+                        <input id="withdraw-amount" class="block w-3/4 lg:w-1/2 ml-5 md:ml-12 mt-5 md:mt-10 p-3 font-bold" type="number" placeholder="$ Please enter the amount">
+                        <button id="withdraw-btn" class="text-white hover:text-violet-700 bg-violet-700 hover:bg-white ml-5 md:ml-12 mt-8 md:mt-12 md:mb-8 mb-5 lg:mb-12  lg:font-xl lg:font-bold  rounded lg:rounded-md px-3 py-1 lg:px-8 lg:py-3">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/transection.js"></script>
+</body>
+</html>
