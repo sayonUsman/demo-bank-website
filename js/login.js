@@ -5,7 +5,6 @@ document.getElementById('login-btn').addEventListener('click', function(){
     if (emailAdrress.value === 'bank@gmail.com' && password.value === 'bank123') {
         window.location.href = 'bank_account.html';
     }
-
     else{
         alert('Your username or password invalid.');
     }
