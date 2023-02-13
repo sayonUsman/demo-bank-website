@@ -9,7 +9,7 @@
 //         balance.innerText = netAmount.toString() + '.00';
 //         depositAmount.value = '';
 //     }
-//     else{
+//     else {
 //         alert('Please enter the amount to deposit');
 //     }
 // });
@@ -20,16 +20,16 @@
 //     const balance =document.getElementById('balance');
 //     const withdrawAmount = document.getElementById('withdraw-amount');
 
-//     if (parseFloat(balance.innerText) >= parseFloat(withdrawAmount.value)){
+//     if (parseFloat(balance.innerText) >= parseFloat(withdrawAmount.value)) {
 //         const netAmount = parseFloat(balance.innerText) - parseFloat(withdrawAmount.value);
 //         withdraw.innerText = withdrawAmount.value + '.00';
 //         balance.innerText = netAmount.toString() + '.00';
 //         withdrawAmount.value = '';
 //     }
-//     else if (parseFloat(balance.innerText) < parseFloat(withdrawAmount.value)){
+//     else if (parseFloat(balance.innerText) < parseFloat(withdrawAmount.value)) {
 //         alert('You have not enough money to withdraw');
 //     }
-//     else{
+//     else {
 //         alert('Please enter the amount to withdraw');
 //     }
 // });
@@ -46,7 +46,7 @@ function depositBalance() {
         deposit.innerText = depositAmount.value + '.00';
         balance.innerText = netAmount.toString() + '.00';
     }
-    else{
+    else {
         alert('Please enter the amount to deposit');
     }
 
@@ -57,15 +57,15 @@ function withdrawBalance() {
     const withdraw = document.getElementById('withdraw');
     const withdrawAmount = document.getElementById('withdraw-amount');
 
-    if (parseFloat(balance.innerText) >= parseFloat(withdrawAmount.value)){
+    if (parseFloat(balance.innerText) >= parseFloat(withdrawAmount.value)) {
         const netAmount = parseFloat(balance.innerText) - parseFloat(withdrawAmount.value);
         withdraw.innerText = withdrawAmount.value + '.00';
         balance.innerText = netAmount.toString() + '.00';
     } 
-    else if (parseFloat(balance.innerText) < parseFloat(withdrawAmount.value)){
+    else if (parseFloat(balance.innerText) < parseFloat(withdrawAmount.value)) {
         alert('You have not enough money to withdraw');
     }
-    else{
+    else {
         alert('Please enter the amount to withdraw');
     }
 
