@@ -9,6 +9,7 @@ document.getElementById('deposit-btn').addEventListener('click', function() {
         balance.innerText = netAmount.toString() + '.00';
         depositAmount.value = '';
     }
+    
     else{
         alert('Please enter the amount to deposit');
     }
@@ -26,10 +27,11 @@ document.getElementById('withdraw-btn').addEventListener('click', function() {
         balance.innerText = netAmount.toString() + '.00';
         withdrawAmount.value = '';
     }
+    
     else if (parseFloat(balance.innerText) < parseFloat(withdrawAmount.value)){
         alert('You have not enough money to withdraw');
-        
     }
+
     else{
         alert('Please enter the amount to withdraw');
     }
